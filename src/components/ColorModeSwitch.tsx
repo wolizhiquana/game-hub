@@ -13,7 +13,7 @@ const ColorModeSwitch = (props: Props) => {
         isChecked={colorMode === "dark"}
         onChange={toggleColorMode}
       />
-      <Text>黑暗模式</Text>
+      <Text whiteSpace="nowrap">黑暗模式</Text>
     </HStack>
   );
 };
