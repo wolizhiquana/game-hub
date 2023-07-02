@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { ScreenShot } from '../entities/ScreenShot'
+import { ScreenShot } from '../entities'
 import APIClient from '../services/api-client'
 
 const useScreenshots = (gameId: number) => {
@@ -7,7 +7,7 @@ const useScreenshots = (gameId: number) => {
 
   return useQuery({
     queryKey: ['screenshots', gameId],
-    queryFn: apiClient.getAll,
+    queryFn: apiClient.getAll
   })
 }
 
